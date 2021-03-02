@@ -103,3 +103,13 @@ microphone.onclick=function(){
 	}
 	
 }
+function evaluate(input){
+	try{
+		var result = eval(input);
+		document.getElementById("output-value").innerText = result;
+	}
+	catch(e){
+		console.log(e);
+		document.getElementById("output-value").innerText = "";
+	}
+}
